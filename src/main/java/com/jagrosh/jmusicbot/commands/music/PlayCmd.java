@@ -50,7 +50,7 @@ public class PlayCmd extends MusicCommand
     {
         super(bot);
         this.loadingEmoji = bot.getConfig().getLoading();
-        this.name = "play";
+        this.name = "play" || "p";
         this.arguments = "<title|URL|subcommand>";
         this.help = "plays the provided song";
         this.aliases = bot.getConfig().getAliases(this.name);
